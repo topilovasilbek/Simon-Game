@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./Fonts./Press_Start_2P/PressStart2P-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #011f3f; }
+  body.error {
+    background-color: #bb1414; }
+  body .body-top {
+    height: 20vh;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    body .body-top p {
+      visibility: hidden;
+      margin: 0;
+      color: #fef2bf;
+      font-family: 'Press Start 2P', cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2.5rem;
+      text-align: center; }
+      @media (max-width: 576px) {
+        body .body-top p {
+          font-size: 1.5rem; } }
+    body .body-top button {
+      color: #011f3f;
+      background-color: #fef2bf;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2.5rem;
+      text-align: center; }
+      @media (max-width: 576px) {
+        body .body-top button {
+          font-size: 1.5rem; } }
+  body .body-middle {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .body-middle .boxes {
+      width: 25rem;
+      height: 25rem;
+      padding: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      @media (max-width: 576px) {
+        body .body-middle .boxes {
+          width: 17rem;
+          height: 17rem;
+          padding: 0.34rem; } }
+      body .body-middle .boxes .box {
+        width: 44%;
+        height: 44%;
+        background-color: #f3f3f3;
+        margin: auto;
+        border: 0.5rem solid #252020;
+        box-sizing: border-box;
+        border-radius: 2rem;
+        cursor: pointer; }
+        body .body-middle .boxes .box#green {
+          background-color: green; }
+        body .body-middle .boxes .box#red {
+          background-color: red; }
+        body .body-middle .boxes .box#yellow {
+          background-color: yellow; }
+        body .body-middle .boxes .box#blue {
+          background-color: blue; }
+        body .body-middle .boxes .box.ai-press {
+          opacity: 0.1;
+          transition: 0.3s linear; }
+        body .body-middle .boxes .box.user-press {
+          box-shadow: 0 0 20px 2px #fff; }
+  body .body-bottom {
+    height: 5vh;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500; }
+    body .body-bottom a {
+      text-decoration: underline;
+      color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

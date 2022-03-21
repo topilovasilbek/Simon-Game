@@ -1,0 +1,8 @@
+$initial-route-from-mainCSS-to-Fonts : "./Fonts";
+
+@font-face {
+    font-family: "Press Start 2P";
+    src: url($initial-route-from-mainCSS-to-Fonts + "./Press_Start_2P/PressStart2P-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,134 @@
+@import "./Fonts/fonts.scss";
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #011f3f;
+
+    &.error{
+        background-color: rgb(187, 20, 20);
+    }
+
+    .body-top {
+        height: 20vh;
+        padding: 1rem 0.5rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            visibility: hidden;
+            margin: 0;
+            color: #fef2bf;
+        font: {
+            family: 'Press Start 2P', cursive;
+            weight: 400;
+            style: normal;
+            size: 2.5rem;
+        }
+        text-align: center;
+        @media (max-width: 576px) {
+            font-size: 1.5rem;
+        }
+        }
+
+        button {
+            color: #011f3f;
+            background-color: #fef2bf;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            font: {
+                family: 'Press Start 2P', cursive;
+                weight: 400;
+                style: normal;
+                size: 2.5rem;
+            }
+            text-align: center;
+            @media (max-width: 576px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .body-middle {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .boxes {
+            width: 25rem;
+            height: 25rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+            @media (max-width: 576px) {
+                width: 17rem;
+                height: 17rem;
+                padding: 0.34rem;
+            }
+
+            .box {
+                width: 44%;
+                height: 44%;
+                background-color: #f3f3f3;
+                margin: auto;
+                border: 0.5rem solid rgb(37, 32, 32);
+                box-sizing: border-box;
+                border-radius: 2rem;
+                cursor: pointer;
+
+                &#green {
+                    background-color: green;
+                }
+
+                &#red {
+                    background-color: red;
+                }
+
+                &#yellow {
+                    background-color: yellow;
+                }
+
+                &#blue {
+                    background-color: blue;
+                }
+
+                &.ai-press {
+                    opacity: 0.1;
+                    transition: 0.3s linear;
+                }
+
+                &.user-press {
+                    box-shadow: 0 0 20px 2px #fff;
+                }
+            }
+        }
+    }
+
+    .body-bottom {
+        height: 5vh;
+        text-align: center;
+        color: #fff;
+
+        font: {
+            size: 1rem;
+            weight: 500;
+        }
+
+        ;
+
+        a {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+
+}
